@@ -42,6 +42,44 @@ body {
 }
 
 @layer Components {
+  .Explore {
+    @apply h-fit w-full  py-14 sm:py-20 px-6 sm:px-20 flex-Center flex-col gap-12 md:gap-16;
+
+    .explore-Heading {
+      @apply h-fit w-full flex-Between;
+
+      h1 {
+        @apply h-fit w-fit font-bold text-xl md:text-3xl text-custom-900;
+      }
+      button {
+        @apply h-fit w-fit font-medium text-sm md:text-base text-custom-900 border px-4 py-2 md:px-5 md:py-2.5 rounded-2xl border-custom-600 cursor-pointer flex-Center;
+      }
+    }
+
+    .explore-Content {
+      @apply h-fit w-full gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+
+      .explore-Card {
+        @apply h-fit min-w-[300px] w-full flex flex-col gap-4;
+
+        img {
+          @apply h-auto w-full bg-cover rounded-4xl;
+        }
+        .wonders-Text {
+          @apply h-fit w-full flex flex-col gap-2;
+
+          h1 {
+            @apply h-fit w-full text-custom-800 font-bold text-lg sm:text-xl;
+          }
+
+          div {
+            @apply h-fit w-full font-semibold text-sm md:text-base text-custom-800;
+          }
+        }
+      }
+    }
+  }
+
   .Wonders {
     @apply h-fit w-full  py-14 sm:py-20 px-6 sm:px-20 flex-Center flex-col gap-12 md:gap-16;
 
