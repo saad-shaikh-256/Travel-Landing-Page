@@ -17,14 +17,8 @@
   --color-custom-1000: #212121;
 }
 
-* {
-  transition: 0.5s;
-  scroll-behavior: smooth;
-}
-
 html,
 body {
-  scroll-behavior: smooth;
   overflow-x: hidden;
   @apply bg-white text-custom-1000 font-poppins;
 }
@@ -42,6 +36,56 @@ body {
 }
 
 @layer Components {
+
+  .subscribe {
+    @apply h-fit w-full py-16 sm:py-20 px-6 sm:px-20 text-white flex-Center;
+
+    background: url("/Images/subscribeBackground.png") no-repeat center/cover;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+
+    .subscribe-Container {
+      @apply h-fit w-full sm:max-w-[650px] md:max-w-[700px] flex-Center flex-col gap-6;
+      position: relative;
+      z-index: 1;
+
+      .subscribe-UpperContainer {
+        @apply h-fit w-full flex-Center flex-col gap-12;
+
+        h1 {
+          @apply h-fit w-full font-bold text-white text-3xl sm:text-[52px] text-center;
+        }
+
+        .input-Field {
+          @apply h-fit w-full flex-Center gap-4 border border-white rounded-full py-2.5 sm:py-3.5 pr-2.5 sm:pr-3.5 pl-6 sm:pl-12 bg-[rgba(255,255,255,0.1)] backdrop-blur-[6px];
+
+          input {
+            @apply h-fit w-full bg-transparent placeholder:text-white flex grow outline-none;
+          }
+
+          button {
+            @apply h-fit w-fit bg-custom-1000 px-6 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-white text-base sm:text-lg cursor-pointer;
+          }
+        }
+      }
+
+      .subscribe-LowerContainer {
+        @apply h-fit w-fit text-sm sm:text-lg text-white font-medium text-center;
+
+        span {
+          @apply underline cursor-pointer;
+        }
+      }
+    }
+  }
+
   footer {
     @apply h-fit w-full py-14 sm:py-20 px-6 sm:px-20 bg-custom-1000 text-white gap-12 flex flex-col justify-center;
 
@@ -64,6 +108,7 @@ body {
 
           i {
             @apply hover:text-white cursor-pointer;
+            transition: color 0.3s ease;
           }
         }
       }
@@ -83,6 +128,7 @@ body {
 
             a {
               @apply h-fit w-fit text-sm md:text-sm font-medium cursor-pointer text-custom-300 hover:text-white;
+              transition: color 0.3s ease;
             }
           }
         }
