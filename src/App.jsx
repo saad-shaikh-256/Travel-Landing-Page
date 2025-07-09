@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Subscribe from "./Components/Subscribe";
 import FAQs from "./Components/FAQs";
+import Wonders from "./Components/Wonders";
 
 function App() {
   // Lenis Setup
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div>
+      <Wonders />
       <FAQs />
       <Subscribe />
       <Footer />
