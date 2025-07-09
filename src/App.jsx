@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import Subscribe from "./Components/Subscribe";
+import FAQs from "./Components/FAQs";
 
 function App() {
   // Lenis Setup
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <FAQs />
       <Subscribe />
       <Footer />
     </div>
