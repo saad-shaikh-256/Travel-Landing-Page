@@ -10,6 +10,7 @@ import Wonders from "./Components/Wonders";
 import Explore from "./Components/Explore";
 import Video from "./Components/Video";
 import Popular from "./Components/Popular";
+import Header from "./Components/Header";
 
 function App() {
   // Lenis Setup
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <Popular />
       <Video />
       <Explore />

@@ -29,10 +29,6 @@ body {
   @apply bg-white text-custom-1000 font-poppins;
 }
 
-::selection {
-  @apply bg-custom-1000 text-white;
-}
-
 @utility flex-Center {
   @apply flex justify-center items-center;
 }
@@ -42,6 +38,79 @@ body {
 }
 
 @layer Components {
+  .home {
+    @apply h-dvh max-h-[950px] w-dvw px-6 sm:px-20 pb-14 sm:pb-20 pt-8 flex justify-between flex-col text-white relative;
+    background: url("/Images/Home/Background Image.png") no-repeat center/cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+
+    nav {
+      @apply h-fit w-full flex justify-between items-center;
+      position: relative;
+      z-index: 1;
+
+      .nav-Logo {
+        @apply h-fit w-fit;
+
+        img {
+          @apply h-8 w-auto;
+        }
+      }
+
+      .nav-Links {
+        @apply h-fit w-fit hidden md:flex-Center gap-6 font-medium text-base;
+
+        a {
+          @apply hover:font-semibold cursor-pointer;
+        }
+      }
+
+      .nav-Language {
+        @apply h-fit w-fit hidden md:flex-Center gap-1 font-medium  cursor-pointer;
+
+        i {
+          @apply text-xs;
+        }
+      }
+
+      .nav-Menu {
+        @apply flex md:hidden text-2xl font-semibold;
+      }
+    }
+
+    .home-Content {
+      @apply h-fit w-full sm:max-w-[500px] md:max-w-[800px] flex flex-col gap-6 md:gap-8;
+
+      position: relative;
+      z-index: 1;
+
+      .home-Heading {
+        @apply h-fit w-full flex flex-col gap-4 md:gap-6;
+
+        .home-Tag {
+          @apply h-fit w-fit text-xs md:text-sm text-white font-semibold flex-Center gap-2 px-5 md:px-6 py-2.5 md:py-3 border rounded-full border-white bg-[rgba(255,255,255,0.1)] backdrop-blur-[6px];
+
+          span {
+            @apply h-2 w-2 bg-white rounded-full;
+          }
+        }
+
+        .heading-Text {
+          @apply h-fit w-full font-bold opacity-90 text-2xl sm:text-3xl md:text-5xl;
+        }
+      }
+      .home-Content {
+        @apply h-fit w-full font-medium text-sm md:text-lg text-white opacity-80;
+      }
+    }
+  }
+
   .Popular {
     @apply h-fit w-full  py-14 sm:py-20 px-6 sm:px-20 flex-Center flex-col gap-12 md:gap-16;
 
