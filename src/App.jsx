@@ -8,6 +8,8 @@ import Subscribe from "./Components/Subscribe";
 import FAQs from "./Components/FAQs";
 import Wonders from "./Components/Wonders";
 import Explore from "./Components/Explore";
+import Video from "./Components/Video";
+import Popular from "./Components/Popular";
 
 function App() {
   // Lenis Setup
@@ -28,6 +30,8 @@ function App() {
 
   return (
     <div>
+      <Popular />
+      <Video />
       <Explore />
       <Wonders />
       <FAQs />

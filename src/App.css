@@ -42,6 +42,51 @@ body {
 }
 
 @layer Components {
+  .Popular {
+    @apply h-fit w-full  py-14 sm:py-20 px-6 sm:px-20 flex-Center flex-col gap-12 md:gap-16;
+
+    .popular-Heading {
+      @apply h-fit w-full flex-Center;
+
+      h1 {
+        @apply h-fit w-fit font-bold text-xl md:text-3xl text-custom-900;
+      }
+    }
+
+    .popular-Content {
+      @apply h-fit w-full gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+
+      .popular-Card {
+        @apply h-fit min-w-[300px] w-full flex flex-col gap-4 cursor-pointer hover:scale-[101%];
+
+        img {
+          @apply h-auto w-full bg-cover rounded-4xl;
+        }
+        .popular-Text {
+          @apply h-fit w-full flex flex-col gap-2;
+
+          h1 {
+            @apply h-fit w-full text-custom-800 font-bold text-lg sm:text-xl;
+          }
+
+          div {
+            @apply h-fit w-fit font-medium text-sm  py-2 px-4 rounded-xl bg-custom-200 text-custom-800;
+          }
+        }
+      }
+    }
+  }
+
+  .Video {
+    @apply h-fit w-full flex-Center py-36 md:py-64;
+
+    background: url("/Images/Video/Background Image.png") no-repeat center/cover;
+
+    img {
+      @apply h-16 md:h-fit w-auto;
+    }
+  }
+
   .Explore {
     @apply h-fit w-full  py-14 sm:py-20 px-6 sm:px-20 flex-Center flex-col gap-12 md:gap-16;
 
@@ -60,7 +105,7 @@ body {
       @apply h-fit w-full gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
 
       .explore-Card {
-        @apply h-fit min-w-[300px] w-full flex flex-col gap-4;
+        @apply h-fit min-w-[300px] w-full flex flex-col gap-4 cursor-pointer hover:scale-[101%];
 
         img {
           @apply h-auto w-full bg-cover rounded-4xl;
@@ -98,7 +143,7 @@ body {
       @apply h-fit w-full gap-8 grid grid-cols-1 sm:grid-cols-2;
 
       .wonders-Card {
-        @apply h-fit w-full flex flex-col gap-4;
+        @apply h-fit w-full flex flex-col gap-4 cursor-pointer hover:scale-[101%];
 
         img {
           @apply h-auto w-full bg-cover rounded-4xl;
