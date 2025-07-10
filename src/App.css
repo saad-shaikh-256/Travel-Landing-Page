@@ -83,7 +83,7 @@ body {
     background: url("/Images/Video/Background Image.png") no-repeat center/cover;
 
     img {
-      @apply h-16 md:h-fit w-auto;
+      @apply h-16 md:h-fit w-auto cursor-pointer hover:scale-[95%];
     }
   }
 

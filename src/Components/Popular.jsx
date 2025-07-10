@@ -3,42 +3,42 @@ import React from "react";
 const Popular = () => {
   const cardContent = [
     {
-      image: "/Images/Explore/Santorini Escape.png",
+      image: "/Images/Popular/Sea Beach View.png",
       title: "Sea Beach View",
       place: "1130 place",
     },
     {
-      image: "/Images/Explore/Maldives Ocean Villa.png",
+      image: "/Images/Popular/Luxurious Resort At Sea.png",
       title: "Luxurious Resort At Sea",
       place: "2340 place",
     },
     {
-      image: "/Images/Explore/Taj Mahal.png",
+      image: "/Images/Popular/Great Switzerland.png",
       title: "Great Switzerland",
       place: "1230 place",
     },
     {
-      image: "/Images/Explore/Bali Tropical Resort.png",
+      image: "/Images/Popular/Venice, Veneto, Italy.png",
       title: "Venice, Veneto, Italy",
       place: "342 place",
     },
     {
-      image: "/Images/Explore/Kyoto Temples.png",
+      image: "/Images/Popular/Thera, Greece.png",
       title: "Thera, Greece",
       place: "324 place",
     },
     {
-      image: "/Images/Explore/Thera Greece.png",
+      image: "/Images/Popular/Liguria, Italy.png",
       title: "Liguria, Italy",
       place: "354 place",
     },
     {
-      image: "/Images/Explore/Goa Beach.png",
+      image: "/Images/Popular/Goa Beach India.png",
       title: "Goa Beach India",
       place: "230 place",
     },
     {
-      image: "/Images/Explore/Romantic Paris.png",
+      image: "/Images/Popular/Luxurious Resort At Sea2.png",
       title: "Luxurious Resort At Sea",
       place: "2340 place",
     },
